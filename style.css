@@ -20,8 +20,8 @@ main {
   align-items: start;
 }
 .container {
-  
-  width: 600px;
+  margin-top: 5%;
+  min-width: 600px;
   min-height: 350px;
   display: flex;
   flex-direction: column;
@@ -39,11 +39,16 @@ main {
 }
 
 #textArea {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem;
   padding: 15px;
-  font-size: 16px;
-  font-family: italic;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  line-height: 30px;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 320px) {

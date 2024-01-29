@@ -8,24 +8,26 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
+  background: rgb(139, 178, 250);
 }
 
 main {
   height: 100%;
   width: 100%;
-  margin-top: 5%;
   display: flex;
   justify-content: center;
   align-items: start;
 }
 .container {
+  
   width: 600px;
-  height: 400px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: blueviolet;
+  border-radius: 10px;
 }
 .container h1 {
   width: 100%;
@@ -37,8 +39,153 @@ main {
 }
 
 #textArea {
+  margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 15px;
   font-size: 16px;
   font-family: italic;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow: scroll;
+    background: rgb(139, 178, 250);
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 300px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+  }
+  .container h1 {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+  }
+
+  #textArea {
+    width: 283px;
+    height: 200px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 15px;
+    font-size: 14px;
+    font-family: italic;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow: scroll;
+    background: rgb(139, 178, 250);
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 340px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+  }
+  .container h1 {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+  }
+
+  #textArea {
+    width: 290px;
+    height: 230px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 15px;
+    font-size: 14px;
+    font-family: italic;
+  }
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+  body {
+    height: auto;
+    width: 100vw;
+    overflow: scroll;
+    background: rgb(139, 178, 250);
+  }
+
+  main {
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  .container {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    width: 375px;
+    min-height: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blueviolet;
+    border-radius: 10px;
+  }
+  .container h1 {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+  }
+
+  #textArea {
+    width: 335px;
+    height: 220px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 15px;
+    font-size: 14px;
+    font-family: italic;
+  }
 }

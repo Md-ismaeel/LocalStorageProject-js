@@ -7,7 +7,6 @@ function showData() {
   }
 }
 function savaData() {
-
   localStorage.setItem("text", textArea.value);
 }
 
